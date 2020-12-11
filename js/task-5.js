@@ -1,12 +1,15 @@
 const checkForSpam = function (message) {
   message = message.toLowerCase();
 
-  let result = false;
+return message.includes('spam') || message.includes('sale');
 
-  if (message.includes("spam") || message.includes("sale")) {
-    result = true;
-  }
-  return result;
+
+  // let result = false;
+
+  // if (message.includes("spam") || message.includes("sale")) {
+  //   result = true;
+  // }
+  // return result;
 };
 
 console.log(checkForSpam("Latest technology news")); // false
